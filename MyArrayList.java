@@ -1,8 +1,15 @@
+
+package Worksheet2;
+
 import java.lang.AssertionError;
 
 public class MyArrayList<T> {
 
-	// FIXME add member variables
+	T[] arr = (T[]) new Object [len]; 
+	private int <T>;
+private int size= 0;
+	
+	
 
 	/**
 	 * Construct an MyArrayList with a given initial length.
@@ -10,16 +17,21 @@ public class MyArrayList<T> {
 	 * @param initialLength The initial length of the array.
 	 */
 	public MyArrayList (int initialLength) { // we do not need to redeclare the <T> type in the constructor
-		// FIXME
+		this.array = new int [initialLength];
+		this.size=0;
+		
+	
 	}
 
+	
+	
 	/**
 	 * Return the number of elements in the MyArrayList.
 	 *
 	 * @return The number of elements in the MyArrayList.
 	 */
 	public int size() {
-		return 0; // FIXME
+		return this.size; 
 	}
 
 
@@ -29,8 +41,17 @@ public class MyArrayList<T> {
 	 * @param element The element to add.
 	 */
 	public void add(T element) {
-		// FIXME
-	}
+	
+		if(this.size<this.length) {
+			this.size++;
+			this.array[this.size]=element;
+		} 
+		
+	 
+	    //size is the number of elements in the array, so if size is less than length then there is space in the array
+	    }
+	    	
+	   
 
 	/**
 	 * Get the element at the specified index.
@@ -41,7 +62,7 @@ public class MyArrayList<T> {
 	 * @return The element at the specified index.
 	 */
 	public T get(int index) {
-		return null; // FIXME
+		return this.array[index];
 	}
 
 	/**
@@ -52,14 +73,22 @@ public class MyArrayList<T> {
 	 * @param index The index to remove.
 	 */
 	public void remove(int index) {
-		// FIXME
+    	for(int i=index; i<this.size-1; i++){
+    		this.size--;
+    		this.array[i]=this.array[i+1];
+    	} 
 	}
 
 	/**
 	 * Double the size of the internal array.
 	 */
 	private void resize() {
-		//FIXME
+		
+		for (int=0; i<this.array.length; i++){
+			
+		}
+		// == boolean function, truth evaluator = is a setter
+		
 	}
 
 	/**
