@@ -1,22 +1,33 @@
+package Worksheet2;
+
 import java.lang.AssertionError;
 
 
 public class MyLinkedList <T> {
 	
 	class Node {
+		int data;
+		Node next;
 		// FIXME add member variables
 		
 		Node(T data) { // Node inherits T from MyLinkedList
-			// FIXME
+			this.data = data;
+			this.next = null;
 		}
 	}
 
+	private Node head;
+	private Node tail;
+	private int size;
 	// FIXME add member variables
 
 	/**
 	 * Construct an MyLinkedList.
 	 */
 	public MyLinkedList() {
+		this.head = null;
+		this.tail = null;
+		this.size = 0;
 		// FIXME
 	}
 
@@ -26,7 +37,8 @@ public class MyLinkedList <T> {
 	 * @return The number of elements in the MyLinkedList.
 	 */
 	public int size() {
-		return 0; // FIXME
+		return this.size;
+		// FIXME
 	}
 
 	/**
@@ -35,7 +47,17 @@ public class MyLinkedList <T> {
 	 * @param element The element to add.
 	 */
 	public void add(T element) {
-		// FIXME
+		Node newNode = new Node (element);
+		if (this.size == 0) {
+			this.head = newNode;
+			this.tail = newNode;
+	}else {
+		Node lastNode = this.tail;
+		lastNode.next = newNode;
+		this.tail = newNode;
+		
+		}
+		this.size++;
 	}
 
 	/**
@@ -188,4 +210,3 @@ public class MyLinkedList <T> {
 		System.out.println("pass");
 	}
 
-}
