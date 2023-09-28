@@ -9,8 +9,10 @@ Respond to my comments by making new commits to the same branch.
 
 ## Review
 1. In your own words, explain what an ArrayList is. 
+An array list is a list on elements that is resizable and has no size limit.
 
 2. In your own words, explain what a LinkedList is. How is it different from an ArrayList?
+   A list of elements that are linked to eachother by pointing one to the next. So the nodes are linked to each other. 
 
 ## Exploration
 
