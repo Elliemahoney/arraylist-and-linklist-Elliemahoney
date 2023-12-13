@@ -9,8 +9,10 @@ Respond to my comments by making new commits to the same branch.
 
 ## Review
 1. In your own words, explain what an ArrayList is. 
+also known as a resizable array implimentation, this list abstract data type is implemented with a resizable array. So elements can be added or removed and the arraylist can change it's size.
 
-2. In your own words, explain what a LinkedList is. How is it different from an ArrayList?
+3. In your own words, explain what a LinkedList is. How is it different from an ArrayList?
+   Also for implementing a list ADT, this data structure is a positional list which means that it's nodes point to each other either to the next or the previous. It has a head and a tail too. A linked list is slower to access items but it is faster than an arraylist for inserting or deletig items. 
 
 ## Exploration
 
